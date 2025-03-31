@@ -10,13 +10,13 @@
 # Структура репозитория
 photometry_of_variable_stars/<br />
 │<br />
-├── data/                     # Данные (Снимки неба в разных фильтрах)<br />
-│   ├── h<br />
-|       └── h*.fit<br />
-│   ├── j<br />
-|       └── j*.fit<br />
-│   ├── k<br />
-|       └── k*.fit<br />
+├────────── data/                     # Данные (Снимки неба в разных фильтрах)<br />
+│             ├── h<br />
+|             |   └── h*.fit<br />
+│             ├── j<br />
+|             |   └── j*.fit<br />
+│             ├── k<br />
+|                 └── k*.fit<br />
 │<br />
 │<br />
 ├── notebooks/                # Jupyter Notebooks<br />
