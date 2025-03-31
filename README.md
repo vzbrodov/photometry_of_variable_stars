@@ -8,24 +8,24 @@
 известным стандартам с использованием конечной апертуры.
 
 # Структура репозитория
-photometry_of_variable_stars/
-│
-├── data/                     # Данные (Снимки неба в разных фильтрах)
-│   ├── h
-|       └── h*.fit
-│   ├── j
-|       └── j*.fit
-│   ├── k
-|       └── k*.fit
-│
-│
-├── notebooks/                # Jupyter Notebooks
-│   └── analysis.ipynb
-│
-├── src/                      # Исходный код небольших процедур
-│   ├── *.py
-│   ├── *.py
-│   └── *.py
-│
-├── requirements.txt          # Зависимости проекта
-└── README.md                 # Описание проекта
+photometry_of_variable_stars/<br />
+│<br />
+├── data/                     # Данные (Снимки неба в разных фильтрах)<br />
+│   ├── h<br />
+|       └── h*.fit<br />
+│   ├── j<br />
+|       └── j*.fit<br />
+│   ├── k<br />
+|       └── k*.fit<br />
+│<br />
+│<br />
+├── notebooks/                # Jupyter Notebooks<br />
+│   └── analysis.ipynb<br />
+│<br />
+├── src/                      # Исходный код небольших процедур<br />
+│   ├── *.py<br />
+│   ├── *.py<br />
+│   └── *.py<br />
+│<br />
+├── requirements.txt          # Зависимости проекта<br />
+└── README.md                 # Описание проекта<br />
