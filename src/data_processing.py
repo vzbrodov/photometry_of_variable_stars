@@ -33,3 +33,27 @@ def get_coords(data_path, filter1, my_threshold, my_fwhm):
         for coords in approx_coords:
             for coord in coords:
                 file.write(f"{coord[0]} {coord[1]}\n")
+
+
+def get_times(data_path, filter1):
+    """
+    Функция, которая получает времена наблюдения со всех снимков.
+    """
+    data_path = os.path.join(data_path, filter1) + '/'
+    iterator_images = sorted(
+        [os.path.join(data_path, f) for f in os.listdir(data_path) if f.endswith('.fit')],
+        key=lambda x: int(re.search(rf'{filter1}(\d+)\.fit', x).group(1))
+    )
+
+    for file in iterator_images:
+        with fits.open(file) as hdul:
+            header = hdul[0].header
+
+            date_obs = header.get('DATE-OBS')  # Дата наблюдения
+
+            obs_time = Time(date_obs, format='isot')
+
+            data.append({
+                'observation_time': obs_time.isot,
+                'jd': obs_time.jd  # Юлианская дата для расчетов
+            })
