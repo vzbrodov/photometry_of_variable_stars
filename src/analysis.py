@@ -1,5 +1,6 @@
 import numpy as np
 from photutils.detection import DAOStarFinder
+import ast
 
 def calculate_flux(image_data, center, radius):
     """
